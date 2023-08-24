@@ -1,4 +1,4 @@
-name: build main
+name: build mai
 
 on:
   push:
@@ -16,4 +16,4 @@ jobs:
     - name: build image
       run: docker build -t pedrotony/checkpoint1-docker .
     - name: push to docker
-      run: docker push pedrotony/checkpoint1-docker .
+      run: docker push pedrotony/checkpoint1-docker 
