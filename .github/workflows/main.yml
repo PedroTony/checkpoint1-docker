@@ -1,0 +1,19 @@
+name: Build
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: docker login 
+      run: docker login -u pedrotony -p dckr_pat_hWJ34aISrizBBMFDZCSmoldSaVM
+    - name: build image
+      run: docker build -t docker push pedrotony/checkpoint1-docker .
+    - name: push to docker
+      run: docker push docker push pedrotony/checkpoint1-docker
