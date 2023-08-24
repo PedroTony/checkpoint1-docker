@@ -11,6 +11,7 @@
 	<groupId>com.github.acnaweb</groupId>
 	<artifactId>study-api</artifactId>
 	<version>1.0</version>
+	<packaging>war</packaging>
 	<name>study-api</name>
 	<description>Aplicação de estudo de API com Spring</description>
 	<properties>
@@ -62,6 +63,7 @@
 
 	</dependencies>
 	<build>
+	<finalName>Checkpoint1-Docker</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
